@@ -1,0 +1,7 @@
+CKCallout
+============
+A project to draw a callout with Core Graphics.
+
+![](http://cocoakit.com/wp-content/uploads/2011/10/Callout_final-min.png)
+
+Website: [http://cocoakit.com](http://cocoakit.com)

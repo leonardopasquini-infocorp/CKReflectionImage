@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E04012D8147588110082B4DD /* CKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04012D7147588110082B4DD /* CKViewController.xib */; };
+		E04012E2147588160082B4DD /* CKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E04012DC147588160082B4DD /* CKAppDelegate.m */; };
+		E04012E3147588160082B4DD /* CKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04012E0147588160082B4DD /* CKViewController.m */; };
+		E04012EA14758BF80082B4DD /* CKReflectionImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04012E914758BF80082B4DD /* CKReflectionImage.m */; };
+		E07EBC39147586FE00A4C7EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EBC38147586FE00A4C7EA /* UIKit.framework */; };
+		E07EBC3B147586FE00A4C7EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EBC3A147586FE00A4C7EA /* Foundation.framework */; };
+		E07EBC3D147586FE00A4C7EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EBC3C147586FE00A4C7EA /* CoreGraphics.framework */; };
+		E07EBC45147586FE00A4C7EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E07EBC44147586FE00A4C7EA /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E04012D7147588110082B4DD /* CKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKViewController.xib; sourceTree = "<group>"; };
+		E04012DB147588160082B4DD /* CKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppDelegate.h; sourceTree = "<group>"; };
+		E04012DC147588160082B4DD /* CKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppDelegate.m; sourceTree = "<group>"; };
+		E04012DF147588160082B4DD /* CKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKViewController.h; sourceTree = "<group>"; };
+		E04012E0147588160082B4DD /* CKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKViewController.m; sourceTree = "<group>"; };
+		E04012E814758BF80082B4DD /* CKReflectionImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKReflectionImage.h; sourceTree = "<group>"; };
+		E04012E914758BF80082B4DD /* CKReflectionImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKReflectionImage.m; sourceTree = "<group>"; };
+		E07EBC34147586FE00A4C7EA /* CKReflectionImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKReflectionImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E07EBC38147586FE00A4C7EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E07EBC3A147586FE00A4C7EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E07EBC3C147586FE00A4C7EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E07EBC40147586FE00A4C7EA /* CKReflectionImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CKReflectionImage-Info.plist"; sourceTree = "<group>"; };
+		E07EBC44147586FE00A4C7EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E07EBC46147586FE00A4C7EA /* CKReflectionImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKReflectionImage-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E07EBC31147586FE00A4C7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07EBC39147586FE00A4C7EA /* UIKit.framework in Frameworks */,
+				E07EBC3B147586FE00A4C7EA /* Foundation.framework in Frameworks */,
+				E07EBC3D147586FE00A4C7EA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E04012D5147588110082B4DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E04012D6147588110082B4DD /* XIBs */,
+			);
+			name = Resources;
+			path = CKReflectionImage/Resources;
+			sourceTree = "<group>";
+		};
+		E04012D6147588110082B4DD /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				E04012D7147588110082B4DD /* CKViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		E04012D9147588160082B4DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E04012DA147588160082B4DD /* Application */,
+				E04012DD147588160082B4DD /* GUI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E04012DA147588160082B4DD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E04012DB147588160082B4DD /* CKAppDelegate.h */,
+				E04012DC147588160082B4DD /* CKAppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E04012DD147588160082B4DD /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				E04012DE147588160082B4DD /* ViewControllers */,
+				E04012E1147588160082B4DD /* Views */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		E04012DE147588160082B4DD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E04012DF147588160082B4DD /* CKViewController.h */,
+				E04012E0147588160082B4DD /* CKViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E04012E1147588160082B4DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E04012E814758BF80082B4DD /* CKReflectionImage.h */,
+				E04012E914758BF80082B4DD /* CKReflectionImage.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E07EBC29147586FD00A4C7EA = {
+			isa = PBXGroup;
+			children = (
+				E07EBC3E147586FE00A4C7EA /* CKReflectionImage */,
+				E04012D5147588110082B4DD /* Resources */,
+				E07EBC37147586FE00A4C7EA /* Frameworks */,
+				E07EBC35147586FE00A4C7EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E07EBC35147586FE00A4C7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E07EBC34147586FE00A4C7EA /* CKReflectionImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E07EBC37147586FE00A4C7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E07EBC38147586FE00A4C7EA /* UIKit.framework */,
+				E07EBC3A147586FE00A4C7EA /* Foundation.framework */,
+				E07EBC3C147586FE00A4C7EA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E07EBC3E147586FE00A4C7EA /* CKReflectionImage */ = {
+			isa = PBXGroup;
+			children = (
+				E04012D9147588160082B4DD /* Classes */,
+				E07EBC3F147586FE00A4C7EA /* Supporting Files */,
+			);
+			path = CKReflectionImage;
+			sourceTree = "<group>";
+		};
+		E07EBC3F147586FE00A4C7EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E07EBC40147586FE00A4C7EA /* CKReflectionImage-Info.plist */,
+				E07EBC44147586FE00A4C7EA /* main.m */,
+				E07EBC46147586FE00A4C7EA /* CKReflectionImage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E07EBC33147586FE00A4C7EA /* CKReflectionImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E07EBC52147586FE00A4C7EA /* Build configuration list for PBXNativeTarget "CKReflectionImage" */;
+			buildPhases = (
+				E07EBC30147586FE00A4C7EA /* Sources */,
+				E07EBC31147586FE00A4C7EA /* Frameworks */,
+				E07EBC32147586FE00A4C7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CKReflectionImage;
+			productName = CKReflectionImage;
+			productReference = E07EBC34147586FE00A4C7EA /* CKReflectionImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E07EBC2B147586FD00A4C7EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E07EBC2E147586FD00A4C7EA /* Build configuration list for PBXProject "CKReflectionImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E07EBC29147586FD00A4C7EA;
+			productRefGroup = E07EBC35147586FE00A4C7EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E07EBC33147586FE00A4C7EA /* CKReflectionImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E07EBC32147586FE00A4C7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04012D8147588110082B4DD /* CKViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E07EBC30147586FE00A4C7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07EBC45147586FE00A4C7EA /* main.m in Sources */,
+				E04012E2147588160082B4DD /* CKAppDelegate.m in Sources */,
+				E04012E3147588160082B4DD /* CKViewController.m in Sources */,
+				E04012EA14758BF80082B4DD /* CKReflectionImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E07EBC50147586FE00A4C7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E07EBC51147586FE00A4C7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E07EBC53147586FE00A4C7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CKReflectionImage/CKReflectionImage-Prefix.pch";
+				INFOPLIST_FILE = "CKReflectionImage/CKReflectionImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E07EBC54147586FE00A4C7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CKReflectionImage/CKReflectionImage-Prefix.pch";
+				INFOPLIST_FILE = "CKReflectionImage/CKReflectionImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E07EBC2E147586FD00A4C7EA /* Build configuration list for PBXProject "CKReflectionImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07EBC50147586FE00A4C7EA /* Debug */,
+				E07EBC51147586FE00A4C7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E07EBC52147586FE00A4C7EA /* Build configuration list for PBXNativeTarget "CKReflectionImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07EBC53147586FE00A4C7EA /* Debug */,
+				E07EBC54147586FE00A4C7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E07EBC2B147586FD00A4C7EA /* Project object */;
+}
