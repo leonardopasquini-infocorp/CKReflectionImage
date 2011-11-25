@@ -24,7 +24,7 @@
 #pragma mark Properties
 
 @synthesize image = image_;
-@synthesize visibleReflectioHeight = visibleReflectioHeight_;
+@synthesize visibleReflectionHeight = visibleReflectionHeight_;
 @synthesize paddingToTopImage = paddingToTopImage_;
 
 #pragma mark -
@@ -38,7 +38,7 @@
     [image_ release];
     image_ = nil;
     
-    visibleReflectioHeight_ = 0.0f;
+    visibleReflectionHeight_ = 0.0f;
     
     paddingToTopImage_ = 0.0f;
     
@@ -60,21 +60,26 @@
     
     if (image_ != nil) {
         
+        // Get current context to draw.
         CGContextRef context = UIGraphicsGetCurrentContext();
         
+        // Reflection image references
         CGImageRef reflectionImage = NULL;
         CGImageRef gradientImage = NULL;
         
-        // Frame of flag
+        // Frame of image
         CGRect frame = [self frame];
         frame.origin.x = 0.0f;
         frame.origin.y = 0.0f;
         frame.size.width = CGRectGetWidth(frame);
         frame.size.height = image_.size.height * CGRectGetWidth(frame) / image_.size.width;
         
-        // Draw initial flag in context
+        // Draw initial image in context
         CGContextSaveGState(context);
         {
+            
+            // Draw image in context, commented but the image show in reverse.
+//            CGContextDrawImage(context, frame, [image_ CGImage]);
             
             // Push context to draw image.
             UIGraphicsPushContext(context);
@@ -109,8 +114,8 @@
             CGColorSpaceRelease(colorSpace);
             
             // Create the start and end points for the gradient vector (straight down).
-            CGPoint gradientStartPoint = CGPointMake(0, (CGRectGetHeight(frame) - visibleReflectioHeight_));
-            CGPoint gradientEndPoint = CGPointMake(0, ((CGRectGetHeight(frame) * 2) - visibleReflectioHeight_));
+            CGPoint gradientStartPoint = CGPointMake(0, (CGRectGetHeight(frame) - visibleReflectionHeight_));
+            CGPoint gradientEndPoint = CGPointMake(0, ((CGRectGetHeight(frame) * 2) - visibleReflectionHeight_));
             
             // Draw gradient into gradient context.
             CGContextDrawLinearGradient(gradientContext, grayScaleGradient, gradientStartPoint, gradientEndPoint, kCGGradientDrawsAfterEndLocation);
@@ -127,7 +132,7 @@
         }
         CGContextRestoreGState(context);
         
-        // Apply gradient bitmap to new context that contains flag.
+        // Apply gradient bitmap to new context that contains image.
         CGContextSaveGState(context);
         {
             
@@ -224,11 +229,11 @@
  *
  * @param gradientStart: Another value to visible reflectio height variable.
  */
-- (void)setVisibleReflectioHeight:(CGFloat)visibleReflectioHeight {
+- (void)setVisibleReflectionHeight:(CGFloat)visibleReflectioHeight {
     
-    if (visibleReflectioHeight_ != visibleReflectioHeight) {
+    if (visibleReflectionHeight_ != visibleReflectioHeight) {
         
-        visibleReflectioHeight_ = visibleReflectioHeight;
+        visibleReflectionHeight_ = visibleReflectioHeight;
         
     }
     

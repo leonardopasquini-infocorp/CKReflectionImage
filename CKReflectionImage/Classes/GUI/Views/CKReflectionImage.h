@@ -24,13 +24,6 @@
  * drawRect: a subclass. If your subclass needs custom drawing code, it is recommended you use UIView as 
  * the base class.
  *
- * How to use this class:
- * Add an view with this class and set values <b>visibleReflectionHeight</b> and <b>paddingToTopImage</b>.
- * The image must be square or more wide. Can't have more high.
- *     __       ____
- *    |  |  or |    |
- *    |__|     |____|
- *
  * @author <a href="mailto:ivan.palmergarcia@gmail.com">Ivan Palmer</a>
  */
 @interface CKReflectionImage : UIView {
@@ -44,7 +37,7 @@
     /**
      * Value of gradient start. This value is divided to height of image.
      */
-    CGFloat visibleReflectioHeight_;
+    CGFloat visibleReflectionHeight_;
     
     /**
      * Padding to top image.
@@ -61,7 +54,7 @@
 /**
  * Provides read-write access to gradientStart value.
  */
-@property (nonatomic, readwrite, assign) CGFloat visibleReflectioHeight;
+@property (nonatomic, readwrite, assign) CGFloat visibleReflectionHeight;
 
 /**
  * Provides read-write access to padding to top image variable.

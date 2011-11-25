@@ -57,7 +57,7 @@
     [reflectionImage setPaddingToTopImage:2.0f];
     
     // Hide 1/4 parts of image. show 3/4
-    [reflectionImage setVisibleReflectioHeight:(CGRectGetWidth([reflectionImage frame]) / 4 * 3)];
+    [reflectionImage setVisibleReflectionHeight:(CGRectGetWidth([reflectionImage frame]) / 4 * 3)];
     
     [reflectionImage setImage:[UIImage imageNamed:@"apple-logo.png"]];
     
