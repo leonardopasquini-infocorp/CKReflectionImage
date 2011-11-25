@@ -1,7 +1,7 @@
-CKCallout
+CKReflectionImage
 ============
-A project to draw a callout with Core Graphics.
+This example shows to create a custom component to display an image with its reflection.
 
-![](http://cocoakit.com/wp-content/uploads/2011/10/Callout_final-min.png)
+![](http://cocoakit.com/wp-content/uploads/2011/11/CKReflectioImage-mini.png)
 
 Website: [http://cocoakit.com](http://cocoakit.com)
