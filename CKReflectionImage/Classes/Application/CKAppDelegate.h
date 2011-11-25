@@ -29,8 +29,8 @@
  */
 @interface CKAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readwrite, retain) UIWindow *window;
 
-@property (strong, nonatomic) CKViewController *viewController;
+@property (nonatomic, readwrite, retain) CKViewController *viewController;
 
 @end

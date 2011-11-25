@@ -11,6 +11,7 @@
 		E04012E2147588160082B4DD /* CKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E04012DC147588160082B4DD /* CKAppDelegate.m */; };
 		E04012E3147588160082B4DD /* CKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04012E0147588160082B4DD /* CKViewController.m */; };
 		E04012EA14758BF80082B4DD /* CKReflectionImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04012E914758BF80082B4DD /* CKReflectionImage.m */; };
+		E04012ED147592EC0082B4DD /* apple-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E04012EC147592EC0082B4DD /* apple-logo.png */; };
 		E07EBC39147586FE00A4C7EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EBC38147586FE00A4C7EA /* UIKit.framework */; };
 		E07EBC3B147586FE00A4C7EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EBC3A147586FE00A4C7EA /* Foundation.framework */; };
 		E07EBC3D147586FE00A4C7EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EBC3C147586FE00A4C7EA /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 		E04012E0147588160082B4DD /* CKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKViewController.m; sourceTree = "<group>"; };
 		E04012E814758BF80082B4DD /* CKReflectionImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKReflectionImage.h; sourceTree = "<group>"; };
 		E04012E914758BF80082B4DD /* CKReflectionImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKReflectionImage.m; sourceTree = "<group>"; };
+		E04012EC147592EC0082B4DD /* apple-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-logo.png"; sourceTree = "<group>"; };
 		E07EBC34147586FE00A4C7EA /* CKReflectionImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKReflectionImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07EBC38147586FE00A4C7EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E07EBC3A147586FE00A4C7EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,6 +53,7 @@
 		E04012D5147588110082B4DD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E04012EB147592EC0082B4DD /* Images */,
 				E04012D6147588110082B4DD /* XIBs */,
 			);
 			name = Resources;
@@ -108,6 +111,14 @@
 				E04012E914758BF80082B4DD /* CKReflectionImage.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E04012EB147592EC0082B4DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E04012EC147592EC0082B4DD /* apple-logo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		E07EBC29147586FD00A4C7EA = {
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E04012D8147588110082B4DD /* CKViewController.xib in Resources */,
+				E04012ED147592EC0082B4DD /* apple-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +286,17 @@
 		E07EBC53147586FE00A4C7EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKReflectionImage/CKReflectionImage-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "CKReflectionImage/CKReflectionImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -285,10 +304,17 @@
 		E07EBC54147586FE00A4C7EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKReflectionImage/CKReflectionImage-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "CKReflectionImage/CKReflectionImage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

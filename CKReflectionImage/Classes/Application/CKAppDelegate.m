@@ -41,6 +41,7 @@
     _viewController = nil;
     
     [super dealloc];
+    
 }
 
 #pragma mark - Application methods

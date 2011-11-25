@@ -18,6 +18,8 @@
 
 #import "CKViewController.h"
 
+#import "CKReflectionImage.h"
+
 /**
  * Defines a NIB file name.
  */
@@ -32,6 +34,8 @@
  */
 - (void)dealloc {
     
+    [reflectionImage release];
+    reflectionImage = nil;
     
     [super dealloc];
     
@@ -45,6 +49,19 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    reflectionImage = [[CKReflectionImage alloc] initWithFrame:CGRectMake(96, 20, 128, 257)];
+    
+    [reflectionImage setBackgroundColor:[UIColor clearColor]];
+    
+    [reflectionImage setPaddingToTopImage:2.0f];
+    
+    // Hide 1/4 parts of image. show 3/4
+    [reflectionImage setVisibleReflectioHeight:(CGRectGetWidth([reflectionImage frame]) / 4 * 3)];
+    
+    [reflectionImage setImage:[UIImage imageNamed:@"apple-logo.png"]];
+    
+    [[self view] addSubview:reflectionImage];
     
 }
 
